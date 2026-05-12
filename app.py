@@ -470,7 +470,7 @@ def generate_equipment_data(n=120):
 def generate_forecast_data(n=12):
     """Generate synthetic demand forecast vs actual data with outliers"""
     products = ["Acne Cream 5%", "Pain Relief Gel 10%", "Eczema Ointment 2%", "Antifungal Lotion 1%"]
-    months = pd.date_range(start=datetime.now() - timedelta(days=365), periods=n, freq='M').strftime('%b %Y').tolist()
+    months = pd.date_range(start=datetime.now() - timedelta(days=365), periods=n, freq='ME').strftime('%b %Y').tolist()
     data = []
     for month in months:
         product = random.choice(products)
