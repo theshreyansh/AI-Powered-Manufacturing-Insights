@@ -17,7 +17,7 @@ fake = Faker()
 
 # Set page config for Apple-like theme
 st.set_page_config(
-    page_title="Encube Ethicals | AI-Powered Insights",
+    page_title="Incube  | AI-Powered Insights",
     page_icon="💊",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -901,7 +901,7 @@ downtime_prediction = equipment_df["Prediction_Accuracy"].mean() * 100 if not eq
 
 
 # --- MAIN DASHBOARD ---
-st.markdown("# Encube Ethicals | AI-Powered Manufacturing Insights")
+st.markdown("# Incube  | AI-Powered Manufacturing Insights")
 st.caption("Synthetic operating dashboard for pharma manufacturing, quality, supply chain, technology transfer, and compliance.")
 
 tab_manufacturing, tab_quality, tab_supply, tab_tech, tab_compliance = st.tabs([
